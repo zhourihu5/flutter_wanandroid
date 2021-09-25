@@ -182,7 +182,7 @@ class BackdropPanel extends StatelessWidget {
               padding: const EdgeInsetsDirectional.only(start: 16.0),
               alignment: AlignmentDirectional.centerStart,
               child: DefaultTextStyle(
-                style: theme.textTheme.subhead,
+                style: theme.textTheme.headline2,
                 child: Tooltip(
                   message: 'Tap to dismiss',
                   child: title,
@@ -209,7 +209,7 @@ class BackdropTitle extends AnimatedWidget {
   Widget build(BuildContext context) {
     final Animation<double> animation = listenable;
     return DefaultTextStyle(
-      style: Theme.of(context).primaryTextTheme.title,
+      style: Theme.of(context).primaryTextTheme.headline1,
       softWrap: false,
       overflow: TextOverflow.ellipsis,
       child: Stack(
@@ -359,8 +359,8 @@ class _BackdropDemoState extends State<BackdropDemo>
         children: <Widget>[
           ListTileTheme(
             iconColor: theme.primaryIconTheme.color,
-            textColor: theme.primaryTextTheme.title.color.withOpacity(0.6),
-            selectedColor: theme.primaryTextTheme.title.color,
+            textColor: theme.primaryTextTheme.headline1.color.withOpacity(0.6),
+            selectedColor: theme.primaryTextTheme.headline1.color,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Column(
